@@ -1,0 +1,73 @@
+.taskcontainer {
+  width: 550px; /* Fixed width for consistent layout */
+  max-width: 1200px; /* Optional: Set a maximum width to prevent it from getting too wide on large screens */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+  background-color: #dfd3c3; /* Updated background color */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.taskcontainer h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.taskcontainer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.header,
+.taskitem {
+  display: grid;
+  grid-template-columns: 5% 30% 20% 15% 15% 15%;
+  padding: 10px 0;
+  border-bottom: 1px solid #dfd3c3;
+  text-align: center;
+}
+
+.header {
+  font-weight: bold;
+  background-color: #dfd3c3;
+}
+
+.taskitem:nth-child(odd) {
+  background-color: #dfd3c3; /* Light gray background for odd rows */
+}
+
+.taskitem:nth-child(even) {
+  background-color: #dfd3c3; /* White background for even rows */
+}
+
+.taskitem button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #914f1e;
+  color: black;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.taskitem button:hover {
+  background-color: #f7dcb9; /* Darker shade for hover effect */
+}
+
+.search {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 98%; /* Adjusted width for full container width */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.search input {
+  width: 90%;
+  color: black;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  background-color: white; /* Background color for the search bar */
+}
